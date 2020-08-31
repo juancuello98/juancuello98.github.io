@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina CLIP</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding:auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="botones">
+            <a href="#Home">Home</a>
+            <a href="#Destinos">Destinos</a>
+            <a href="#Multimedia">Galeria</a>
+            <a href="#Contacto">Contacto</a>
+        </div>
+        
+    </nav>
+   <section id="Home">
+       <div id="inicio-head" class="container bg-claro">
+           <h1>Bienvenido a Nuestro Sitio de viajes</h1>
+           <p class="p-home">Si estas buscando una agencia que sepa priorizar la experiencias de sus clientes estas en el lugar indicado</p>
+           <button class="boton-inicio" href="#Nosotros">Ver la experiencia</button>
+       </div>
+   </section>
+   <section id="Destinos">
+        <div class="contenedor-principal">
+            <h2>Destinos</h2>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQRz_wfNQzeU_4FRomLhI6hGRjK_uwGNtPA7A&usqp=CAU" alt="NuevaZelanda" style="width: 100%;">
+                    <h3 class="card-title">Nueva Zelanda</h3>
+                    <p class="card-subtitle">País en el suroeste del océano Pacífico</p>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="card ">
+                      <img src="https://images2.alphacoders.com/815/815428.jpg" alt="Avatar" style="width:100%">
+                      <h3 class="card-title">Australia</h3>
+                      <p class="card-subtitle">País en el suroeste del océano Pacífico</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card ">
+                      <img src="./css/imagenes/canada.jpg" alt="Avatar" style="width:100%">
+                      <h3 class="card-title">Canada</h3>
+                      <p class="card-subtitle">Las ciudades principales incluyen la enorme Toronto, Vancouver.</p>
+                    </div>
+                </div>       
+                <div class="column">
+                    <div class="card ">
+                      <img src="https://sergimateo.com/wp-content/2012/12/Nueva-York-17.jpg" alt="Avatar" style="width:100%">
+                      <h3 class="card-title">Estados Unidos</h3>
+                      <p class="card-subtitle">Estados Unidos es un país de 50 estados que ocupa una extensa franja de América</p>
+                    </div>
+                </div>                
+            </div>
+            <a href="https://www.despegar.com.ar/"  class="boton-destinos">Ver vuelos disponibles</a>
+        </div>
+   </section>
+   <section id="Multimedia">
+    <div class="contenedor-youtube">
+        <h4>A disfrutar</h4>
+        <div class="contenedor-videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lGlU7TBsOIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hhWcla5rxvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oWpwC5SMtSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8ee2Q7nTb6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.despegar.com.ar/"  class="boton-youtube">Ver mas videos</a>
+    </div>
+   </section>
+   <section id="Contacto">
+    <div class="contenedor-principal">
+        <h2>Contacto</h2>
+        <div class="contenedor-formulario">
+            <form action="/action_page.php">
+                <label for="fname">Nombre y Apellido</label>
+                <input type="text" id="fname" name="firstname" placeholder="Escriba su nombre y apellido...">
+               
+                <label for="lname">Email de contacto</label>
+                <input type="mail" id="lname" name="lastname" placeholder="Su email..">
+                <br>
+                <br>
+                <label for="country">Destino de Interes</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="usa">Nueva Zelanda</option>
+                </select>
+                <br>
+                <textarea name="mensaje" id="solicitud" cols="30" rows="10"></textarea>
+              </form>            
+        </div>
+        <a href="https://www.despegar.com.ar/"  class="boton-destinos">Enviar consulta</a>
+    </div>
+</section>
+</body>
+</html>
