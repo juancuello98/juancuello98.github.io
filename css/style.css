@@ -1,278 +1,84 @@
 
-nav {
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.bg-black{
     background-color: black;
-    width: 100%;
-    height: 5rem;
+}
+hr{
+    width: 30%;
+    background-color: black;
+    border: 1px solid black;
 }
 
-nav a {
-    text-decoration: none;
-    padding-right: 1.5rem;
-    padding-top: 5rem;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+.hr-decoration{
     
-}
-.container{
-    width: 100%;
-    height: 45rem;    
-}
-
-.bg-claro{
-    background-color: #f9f9f9;
-}
-
-.bg-oscuro{
-    background-color: black;
-}
-
-.botones{
     position: relative;
-    top:1.5rem;
-    left: 60rem;
+    top: -1.25rem;
+    border: 3px solid rgb(247, 225, 27);
+    width: 10%;
 }
 
-#inicio-head{
-    background-image: url("https://image.winudf.com/v2/image1/Y29tLmFwcDNkd2FsbHBhcGVyaGQubW91bnRhaW53YWxscGFwZXJfc2NyZWVuXzBfMTU2NzAzMDUzMl8wNDI/screen-0.jpg?fakeurl=1&type=.jpg");
-    background-repeat: fixed;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-div h1 {
+.texto-en-medio{
     position: relative;
-    top: 10rem;
-    left: 15rem;
-    border: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 3rem;
+    top: -10rem;
+    padding-bottom: 15px;
 }
 
-.p-home{
-    position: relative;
-    top: 10rem;
-    left: 15rem;
-    border: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+mark{
+    background-color: rgb(248, 52, 52);
 }
 
-.boton-inicio{
-    position: relative;
-    top: 15rem;
-    left: 32rem;
-    border: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    height: 3rem;
-    width: 20rem;
-    background: none;
-    border: 3px solid white;
-    border-radius: 5rem;
-    transition: 0.3s;
+.btn-rojo {
+    background-color: rgb(248, 52, 52);
 }
 
-.boton-inicio:hover{
-    color: black;
-    background-color: white;
-    border: 3px solid black;
-    cursor: pointer;
-    opacity: 70%;
+.card{
+    transition:0.3s;
 }
 
-h2 {
-    position: relative;
-    top: 4rem;
-    left:5rem;
-    margin:0;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: 3rem;
-    max-width: 4rem;
-
-}
-
-.contenedor-principal{
-    width: 100%;
-    height: 40rem;
-    background-color: rgb(249, 249, 249);
-}
-
-.column {
-    float: left;
-    width: 20%;
-    padding: 0 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 5rem -5px 0 5rem;}
-  
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding-bottom: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    transition: 0.2s;
-    width: 100%;
-    height: 20rem;
-  }
 .card:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-  /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+
+.bg-image{
+    height: 40rem;
+    background-image: url(./imagenes/valija-amarilla.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-image-galery{
+    height: 40rem;
+    max-width: 100%;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/006/122/970/original/ahmed-adel-world.gif?1496198125);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width:400px){
+    .bg-image{
+        height: 50rem;
+        max-width: 100%;
+        background-image: url(./imagenes/valija-amarilla-responsive.jpg);
+        background-size: 90%;
     }
-  }
-.card-title{
-    font-family: 'Poppins', sans-serif;
+    .bg-image-galery{
+        height: 50rem;
+        max-width: 100%;
+    }
+    .card-img{
+        height: 20rem;
+    }
+    .texto-en-medio{
+        top:-0.5rem;
+    }
 }
 
-.card-subtitle{
-    padding:10px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.boton-destinos{
-    position: relative;
-    top: 4rem;
-    left: 35rem;
-    border: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    height: 3rem;
-    width: 20rem;
-    background: none;
-    border: 3px solid black;
-    border-radius: 5rem;
-    transition: 0.3s;
-    text-decoration:none;
-    padding:20px;
-}
-.boton-destinos:hover{
-    color:white;
-    background-color: black;
-    cursor: pointer;
-}
-
-.contenedor-youtube{
+.position-simulator{
+    height: 100%;
     width: 100%;
-    height: 60rem;
-    background-color: rgb(0, 0, 0);
 }
-h4{
-    position: relative;
-    top: 4rem;
-    left:5rem;
-    margin:0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    color: white;
-}
-
-.contenedor-videos{
-    position: relative;
-    top: 5rem;
-    left: 5rem;
-} 
-
-.boton-youtube{
-    position: relative;
-    top: 4rem;
-    left: 35rem;
-    border: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    height: 3rem;
-    width: 20rem;
-    background: none;
-    border: 3px solid white;
-    border-radius: 5rem;
-    transition: 0.3s;
-    text-decoration:none;
-    padding:20px;
-}
-.boton-youtube:hover{
-    color:black;
-    background-color: white;
-    cursor: pointer;
-}
-
-input[type=text], select {
-    position: relative;
-    width: 10rem;
-    padding: 12px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family:  'Poppins', sans-serif;
-    transition: width 0.4s ease-in-out;
-  }
-  input[type=mail], select {
-    position: relative;
-    width: 10rem;
-    padding: 12px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family:  'Poppins', sans-serif;
-    transition: width 0.4s ease-in-out;
-  }
-  input[type=text]:focus {
-    width: 15rem;
-  }
-  input[type=mail]:focus {
-    width: 15rem;
-  }
-label{
-    position: relative;
-    padding: 10px;
-    font-family:  'Poppins', sans-serif;
-}
-
-textarea{
-    margin-top: 2rem;
-    position: relative;
-    width: 43rem;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family:  'Poppins', sans-serif;
-    transition: width 0.4s ease-in-out;
-}
-textarea:focus {
-    width: 43rem;
-  }
-
-.contenedor-formulario {
-    position: relative;
-    left: 15rem;
-    margin: 5rem -5px 0 5rem;
-}
-  
-  /* Clear floats after the columns */
-.contenedor-formulario:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
