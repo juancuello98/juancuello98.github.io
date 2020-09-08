@@ -67,8 +67,8 @@ mark{
         background-size: 90%;
     }
     .bg-image-galery{
-        height: 50rem;
-        max-width: 100%;
+        height: 20rem;
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/006/122/970/original/ahmed-adel-world.gif?1496198125) ;
     }
     .card-img{
         height: 20rem;
